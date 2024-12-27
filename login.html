@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Ferrari</title>
+    <link rel="stylesheet" href="loginstyle.css" />
+</head>
+
+<body>
+    
+    <form method="post" action="read.php">
+      <header>
+            <img src="ferrarilogo.png" class="logo"></a>
+            <ul class="navigation">
+                <li><a href="signin.html">Sign-in</a></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="store.html">Store</a></li>
+                <li><a href="carinfo.html">Car Info</a></li>
+            </ul>
+        </header>
+        <div class="container">
+          <h1>Register</h1>
+          <p>Please fill in this form to create an account.</p>
+          <hr>
+      
+          <b>Email</b><br>
+          <input type="email" placeholder="Enter Email" name="email"  required>
+      
+          <b>Password</b><br>
+          <input type="password" placeholder="Enter Password" name="psw"  required>
+      
+          <b>Repeat Password</b><br>
+          <input type="password" placeholder="Repeat Password" name="psw-repeat"  required>
+
+          <b>First Name</b><br>
+          <input type="text" placeholder="Enter your name" name="firstname" required>
+          <b>Last Name</b><br>
+          <input type="text" placeholder="Enter your name" name="lastname" required>
+          <b>Date Of Birth</b><br>
+          <input type="text" placeholder="Enter your Date of birth" name="dob" required>
+          <b>Nationality</b><br>
+          <input type="text" placeholder="Enter your Nationality" name="Nationality" required>
+          <hr>
+      
+          <button type="submit" value="save" class="registerbtn">Register</button>
+        </div>
+      
+        <div class="container signin">
+          <p>Already have an account? <a href="signin.html">Sign in</a>.</p>
+        </div>
+      </form>
+</body>
+
+</html>

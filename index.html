@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Ferrari</title>
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="learnmorestyle.css" />
+</head>
+
+<body>
+    <section>
+
+        <head>
+            <style>
+                body {
+                    font-family: Arial, Helvetica, sans-serif
+                }
+
+                * {
+                    box-sizing: border-box;
+                }
+
+                .bg-img {
+                    background-image: url("1313.jpg");
+
+                    min-height: 380px;
+
+                    background-position: center;
+                    background-repeat: no-repeat;
+                    background-size: cover;
+
+                    position: relative;
+                }
+
+                .container {
+                    position: absolute;
+                    margin: 20px;
+                    width: auto;
+                }
+
+                .topnav {
+                    overflow: hidden;
+                    background-color: #333;
+                }
+
+                .topnav a {
+                    float: left;
+                    color: #f2f2f2;
+                    text-align: center;
+                    padding: 14px 16px;
+                    text-decoration: none;
+                    font-size: 17px;
+                }
+
+                .topnav a:hover {
+                    background-color: #ddd;
+                    color: black;
+                }
+            </style>
+        </head>
+
+        <body>
+
+            <div class="bg-img">
+                <div class="container">
+                    <div class="topnav">
+                        <a href="login.html">Login</a>
+                        <a href="signin.html">Sign-in</a>
+                        <a href="index.html">Home</a>
+                        <a href="store.html">Store</a>
+                        <a href="carinfo.html">Car Info</a>
+                    </div>
+                </div>
+            </div>
+            <hr class="hr" color="red">
+
+            <style>
+                * {
+                    box-sizing: border-box;
+                }
+
+                body {
+                    font-family: Verdana, sans-serif;
+                }
+
+                .mySlides {
+                    display: none;
+                    padding: 30px;
+                    text-align: center;
+                }
+
+                img {
+                    vertical-align: middle;
+                }
+
+                .slideshow-container {
+                    max-width: 1000px;
+                    position: relative;
+                    margin: auto;
+                }
+
+
+
+
+
+                .dot {
+                    height: 15px;
+                    width: 15px;
+                    margin: 0 2px;
+                    background-color: #bbb;
+                    border-radius: 50%;
+                    display: inline-block;
+                    transition: background-color 0.6s ease;
+                }
+            </style>
+
+            <body>
+
+
+                <div class="slideshow-container">
+
+                    <div class="mySlides fade">
+                        <img src="b1.jpg" style="width:900px;height:400px">
+                    </div>
+
+                    <div class="mySlides fade">
+                        <img src="b2.jpg" style="width:900px;height:400px">
+                    </div>
+
+                    <div class="mySlides fade">
+                        <img src="b3.jpg" style="width:900px; height:400px">
+                    </div>
+
+                </div>
+                <br>
+
+                <div style="text-align:center">
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                </div>
+
+                <script>
+                    let slideIndex = 0;
+                    showSlides();
+
+                    function showSlides() {
+                        let i;
+                        let slides = document.getElementsByClassName("mySlides");
+                        let dots = document.getElementsByClassName("dot");
+                        for (i = 0; i < slides.length; i++) {
+                            slides[i].style.display = "none";
+                        }
+                        slideIndex++;
+                        if (slideIndex > slides.length) { slideIndex = 1 }
+                        for (i = 0; i < dots.length; i++) {
+                            dots[i].className = dots[i].className.replace(" active", "");
+                        }
+                        slides[slideIndex - 1].style.display = "block";
+                        dots[slideIndex - 1].className += " active";
+                        setTimeout(showSlides, 3000);
+                    }
+                </script>
+
+                <div class="info">
+                    <p style="width: 30%;
+                margin: 10px">Ferrari is an Italian luxury sports car manufacturer based in Maranello, Italy. Founded
+                        by Enzo
+                        Ferrari (1898–1988) in 1939 from the Alfa Romeo racing division as Auto Avio Costruzioni, the
+                        company built its first car in 1940, and produced its first Ferrari-badged car in 1947.</p>
+                    <p style="width: 30%;
+                margin: 10px"> Ferrari is unique because of the "Tailor-Made" program that the company provides for its
+                        customers.
+                        Through the program, buyers get the opportunity to customize the Ferrari model they purchase
+                        from
+                        the Maranello factory.</p>
+                    <p style="width: 30%;
+                margin: 10px">
+                        Probably the most obvious benefit of a Ferrari is that you will get speed and performance far in
+                        excess of anything you could expect from the average family saloon. Driving a Ferrari is a real
+                        thrill, and an experience that can't help but make you fall in love with driving again.</p>
+                    <p style="width: 30%;
+                margin: 10px">Ferrari seemed to have mastered both engine and aero elements suffering none of the
+                        porpoising trauma
+                        that is behind Mercedes slow start. Ferrari are further bolstered by engine regulations that
+                        have
+                        frozen development for the next four years, largely baking in any power advantage they might
+                        have
+                        generated</p>
+                    <p style="width: 30%;
+                margin: 10px">
+                        Regardless, the Ferrari logo's meaning couldn't be more clear: the Cavallino Rampante symbolizes
+                        fierce passion, courage, and command of a domain that many would have thought unconquerable. For
+                        Barraca, that domain was the skies in which he flew; for Ferrari, it was the racetrack on which
+                        he
+                        competed.</p>
+                    <p style="width: 30%;
+                margin: 10px">
+                        The fastest production Ferrari is the Enzo, which has a top speed of 218 mph. As for the fastest
+                        0-60 mph time, the award goes to the SF90 Stradale, which has managed to go as low as two
+                        seconds to
+                        the mark
+                    </p>
+                </div>
+
+
+                <style>
+                    .info {
+                        display: flex;
+                        flex-wrap: wrap;
+                        justify-content: center;
+                        padding: 100px;
+                    }
+
+                    .img {
+                        width: 30%;
+                        margin: 10px;
+                    }
+                </style>
+
+                <img src="homeimg.jpg" class="center">
+                <style>
+                    .center {
+                        display: block;
+                        margin-left: auto;
+                        margin-right: auto;
+                        width: 70%;
+                        padding-bottom: 50px;
+                    }
+                </style>
+
+            </body>
+            <hr color="red">
+            <h3 style="color: white; padding: 20px">About us</h3>
+            <p style="text-align: center">Enzo Ferrari was not initially interested in the idea of producing road cars
+                when he formed Scuderia Ferrari in 1929, with headquarters in Modena. Scuderia Ferrari literally means
+                "Ferrari Stable" and is usually used to mean "Team Ferrari". Ferrari bought,[prepared, and fielded Alfa
+                Romeo racing cars for gentleman drivers, functioning as the racing division of Alfa Romeo. In 1933, Alfa
+                Romeo withdrew its in-house racing team and Scuderia Ferrari took over as its works team: the Scuderia
+                received Alfa's Grand Prix cars of the latest specifications and fielded many famous drivers such as
+                Tazio Nuvolari and Achille Varzi. In 1938, Alfa Romeo again brought its racing operation in-house,
+                forming Alfa Corse in Milan and hired Enzo Ferrari as manager of the new racing department; thereby
+                disbanding the Scuderia Ferrari </p>
+            <a
+                href="https://store.ferrari.com/en-bg/store-locator#search/coords/42.68475198690061,25.543272350000024/ne/45.37944593591707,29.668638560937524/sw/39.990058037884154,21.417906139062524"><img
+                    src="images.jpg" class="imgloc"></a>
+
+            <style>
+                .imgloc {
+                    display: block;
+                    margin-left: auto;
+                    margin-right: auto;
+                    width: 600px;
+                    height: 300px;
+                    padding: 40px;
+                }
+            </style>
+
+    </section>
+
+
+</html>

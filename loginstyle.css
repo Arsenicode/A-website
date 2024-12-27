@@ -1,0 +1,103 @@
+* {
+  box-sizing: border-box;
+  background: #161616;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #161616;
+
+}
+header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 40px 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+}
+
+header .logo {
+  position: relative;
+  max-width: 150px;
+
+}
+
+header .navigation {
+  position: relative;
+  display: flex;
+
+}
+
+header .navigation li {
+  list-style: none;
+}
+
+header .navigation li a {
+  display: inline-block;
+  color: red;
+  font-weight: 500;
+  text-decoration: none;
+  margin-left: 40px;
+}
+
+.container {
+  padding: 16px;
+}
+
+h1 {
+    color: white;
+}
+
+p {
+    color: white;
+}
+
+input {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+}
+
+b {
+  color: white;
+}
+
+hr {
+  margin-bottom: 25px;
+}
+
+.registerbtn {
+  background-color: red;
+  color: white;
+  padding: 16px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+}
+
+.registerbtn:hover {
+  opacity: 1;
+}
+
+a {
+  color: dodgerblue;
+}
+
+.signin {
+  background: #161616;
+  text-align: center;
+  color: white;
+}
+
